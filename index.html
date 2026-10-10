@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="theme-color" content="#1764b5">
+<title>Portal Website Cabang Ciledug</title>
+<style>
+:root{--navy:#12396b;--blue:#1677dc;--muted:#526b8b;--bg:#f5faff}
+*{box-sizing:border-box}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--navy);background:linear-gradient(180deg,#f4faff 0%,#fff 65%,#eef6ff 100%);min-height:100vh}
+.hero{position:relative;overflow:hidden;padding:30px 22px 36px;color:#fff;background:linear-gradient(120deg,#1556a0,#2878cf 65%,#4699e8)}
+.hero:before,.hero:after{content:"";position:absolute;border-radius:50%;background:#fff;opacity:.07;pointer-events:none}
+.hero:before{width:360px;height:360px;left:-120px;top:-235px}
+.hero:after{width:450px;height:450px;right:-160px;bottom:-360px}
+.hero-inner{position:relative;z-index:1;max-width:1100px;margin:auto;display:flex;align-items:center;justify-content:space-between;gap:20px}
+.brand{display:flex;align-items:center;gap:16px}
+.logo{width:58px;height:58px;border-radius:15px;background:#fff;color:#2377c8;display:grid;place-items:center;font-size:31px;box-shadow:0 8px 22px #083e772c}
+.eyebrow{font-size:clamp(15px,2vw,20px);opacity:.94}
+h1{font-size:clamp(26px,4vw,38px);line-height:1.12;margin:3px 0 10px;letter-spacing:-.7px}
+.tagline{margin:0;font-size:16px;color:#e0efff}
+.header-label{font-weight:650;white-space:nowrap;display:flex;align-items:center;gap:10px}
+.header-label span{font-size:23px}
+main{max-width:1100px;margin:34px auto 0;padding:0 22px 20px}
+.intro{text-align:center;margin-bottom:25px}
+.intro h2{font-size:22px;margin:0 0 7px}
+.intro p{color:var(--muted);margin:0;font-size:14px}
+.grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:22px}
+.card{--accent:#2184e8;--pale:#e6f3ff;display:flex;flex-direction:column;overflow:hidden;border:1px solid #dceaf8;border-radius:20px;background:#fff;box-shadow:0 9px 24px #1d5b9210;transition:transform .2s ease,box-shadow .2s ease}
+.card:hover{transform:translateY(-4px);box-shadow:0 15px 30px #1d5b921b}
+.art{height:150px;background:var(--pale);position:relative;display:grid;place-items:center;overflow:hidden}
+.art:before{content:"";position:absolute;width:190px;height:70px;border-radius:50%;background:var(--accent);opacity:.10;transform:rotate(-18deg)}
+.art:after{content:"";position:absolute;width:22px;height:22px;border-radius:50%;background:var(--accent);opacity:.14;right:18%;bottom:22%}
+.num{position:absolute;left:17px;top:16px;width:34px;height:34px;display:grid;place-items:center;border-radius:50%;background:var(--accent);color:white;font-weight:800;box-shadow:0 3px 8px #00000012}
+.illustration{font-size:62px;position:relative;z-index:1;filter:drop-shadow(0 7px 4px #12396b12)}
+.card-content{padding:19px 20px 20px;display:flex;flex-direction:column;flex:1}
+.card h3{font-size:18px;line-height:1.35;margin:0 0 10px;letter-spacing:-.2px}
+.card p{font-size:14px;line-height:1.65;color:var(--muted);margin:0 0 18px;flex:1}
+.link{display:flex;align-items:center;justify-content:center;gap:9px;padding:13px 14px;background:var(--accent);color:white;text-decoration:none;font-weight:700;font-size:14px;border-radius:12px;transition:filter .15s}
+.link:hover{filter:brightness(.94)}
+.link svg{width:17px;height:17px;flex-shrink:0}
+.c2{--accent:#18a57e;--pale:#e5f8f2}.c3{--accent:#7655dc;--pale:#f0ebff}.c4{--accent:#f18b20;--pale:#fff3e2}.c5{--accent:#2184e8;--pale:#e6f3ff}
+footer{margin-top:24px;padding:25px 20px 30px;text-align:center;color:#6d88ad;font-size:13px;line-height:1.8;position:relative}
+.footer-icon{font-size:22px;display:block;margin-bottom:6px}
+footer p{margin:0}
+@media(max-width:850px){.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.hero-inner{align-items:flex-start}.header-label{font-size:13px}}
+@media(max-width:560px){.hero{padding:23px 18px 27px}.hero-inner{display:block}.brand{gap:12px}.logo{width:48px;height:48px;font-size:26px;border-radius:13px}.header-label{margin:17px 0 0 60px}.tagline{font-size:14px}.grid{grid-template-columns:1fr;gap:16px}main{padding:0 16px;margin-top:24px}.art{height:135px}.card-content{padding:17px}.card h3{font-size:17px}.intro h2{font-size:20px}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<header class="hero">
+  <div class="hero-inner">
+    <div class="brand">
+      <div class="logo" aria-hidden="true">◎</div>
+      <div>
+        <div class="eyebrow">Portal Website</div>
+        <h1>Cabang Ciledug</h1>
+        <p class="tagline">Satu Link, Akses Semua Kebutuhan</p>
+      </div>
+    </div>
+    <div class="header-label"><span aria-hidden="true">♙</span> Komida Ciledug By Wisnu Mustika Adhi</div>
+  </div>
+</header>
+<main>
+  <div class="intro">
+    <h2>Selamat Datang di Portal Cabang</h2>
+    <p>Pilih layanan yang ingin Anda buka melalui daftar website di bawah ini.</p>
+  </div>
+  <section class="grid" aria-label="Daftar website">
+    <article class="card c1">
+      <div class="art"><span class="num">1</span><span class="illustration" aria-hidden="true">📋</span></div>
+      <div class="card-content">
+        <h3>Isi Laporan Harian dan Cek Keperluan Data</h3>
+        <p>Isi laporan harian dan periksa keperluan data perpustakaan dengan mudah.</p>
+        <a class="link" href="https://wisnumustika.github.io/Perpustakaan-Cabang-Ciledug/" target="_blank" rel="noopener noreferrer">↗ &nbsp; Buka Website <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="card c2">
+      <div class="art"><span class="num">2</span><span class="illustration" aria-hidden="true">🎫</span></div>
+      <div class="card-content">
+        <h3>Pengajuan Perpindahan Hari, Anggota dan Staf</h3>
+        <p>Ajukan perpindahan hari, anggota, dan staf dengan praktis.</p>
+        <a class="link" href="https://wisnumustika.github.io/Tiket-Cabang/" target="_blank" rel="noopener noreferrer">↗ &nbsp; Buka Website <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="card c3">
+      <div class="art"><span class="num">3</span><span class="illustration" aria-hidden="true">💳</span></div>
+      <div class="card-content">
+        <h3>Laporan Uang Kas Cabang</h3>
+        <p>Lihat dan kelola laporan uang kas cabang melalui portal ini.</p>
+        <a class="link" href="https://wisnumustika.github.io/UangKasCabang/" target="_blank" rel="noopener noreferrer">↗ &nbsp; Buka Website <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="card c4">
+      <div class="art"><span class="num">4</span><span class="illustration" aria-hidden="true">📗</span></div>
+      <div class="card-content">
+        <h3>Update Kondisi Buku dan Jam Center Meeting</h3>
+        <p>Pantau pembaruan kondisi buku dan jadwal jam center meeting.</p>
+        <a class="link" href="https://docs.google.com/spreadsheets/d/1n88iQXUpbU6BQJLmGtvLPHXgjieXnZa4y-NDgXT5F04/edit?usp=sharing" target="_blank" rel="noopener noreferrer">↗ &nbsp; Buka Website <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="card c5">
+      <div class="art"><span class="num">5</span><span class="illustration" aria-hidden="true">📊</span></div>
+      <div class="card-content">
+        <h3>Rekap Center Pendapatan Nol</h3>
+        <p>Lihat rekap center pendapatan nol melalui Google Spreadsheet.</p>
+        <a class="link" href="https://docs.google.com/spreadsheets/d/1lrYWfgdWH8iIef-zYHVukayEcUelVDG56gS1u3i_Bh4/edit?usp=sharing" target="_blank" rel="noopener noreferrer">↗ &nbsp; Buka Website <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+
+    <article class="card c2">
+      <div class="art"><span class="num">6</span><span class="illustration" aria-hidden="true">🎯</span></div>
+      <div class="card-content">
+        <h3>Target Bulanan Staf</h3>
+        <p>Lihat dan periksa target bulanan staf melalui Google Spreadsheet.</p>
+        <a class="link" href="https://docs.google.com/spreadsheets/d/14Vhaxijalar4yuznzZvGkfAJ9zowjEV9LeJSgKwO9zw/edit?gid=1111850930#gid=1111850930" target="_blank" rel="noopener noreferrer">↗ &nbsp; Buka Website <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+    <article class="card c4">
+      <div class="art"><span class="num">7</span><span class="illustration" aria-hidden="true">📈</span></div>
+      <div class="card-content">
+        <h3>List Target Pencairan Bulanan Staf</h3>
+        <p>Buka daftar target pencairan bulanan staf melalui Google Spreadsheet.</p>
+        <a class="link" href="https://docs.google.com/spreadsheets/d/1Pq8nbOT1laOY0yBBVTURLeTNhWaibXWeODl5FOdXUcQ/edit?gid=1926740783#gid=1926740783" target="_blank" rel="noopener noreferrer">↗ &nbsp; Buka Website <span aria-hidden="true">→</span></a>
+      </div>
+    </article>
+  </section>
+</main>
+<footer>
+  <span class="footer-icon" aria-hidden="true">♧</span>
+  <p>Semua website di atas dapat diakses dengan satu link ini.</p>
+  <p>Selamat bekerja dan semoga bermanfaat!</p>
+</footer>
+</body>
+</html>
